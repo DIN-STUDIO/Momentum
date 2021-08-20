@@ -5,6 +5,6 @@ const fNum = Math.floor(randNum)
 const chosenImage = image[fNum]
 
 const backgroundImages = document.createElement("img")
-backgroundImages.src = "img/" + chosenImage
+backgroundImages.src = "./img/" + chosenImage
 
 document.body.appendChild(backgroundImages)
