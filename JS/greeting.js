@@ -6,8 +6,6 @@ const greeting = document.querySelector("#greeting")
 const HIDDEN_USERNAME = "hidden"
 const USERNAME_KEY = "username"
 
-const link = document.querySelector("a")
-
 function onloginSubmit(event) {
     event.preventDefault();
     // greeting.classList.add(HIDDEN_USERNAME)
@@ -18,8 +16,8 @@ function onloginSubmit(event) {
 }
 
 function paintGreeting(){
-    username = localStorage.getItem(USERNAME_KEY)
-    greeting.innerText = "Hello " + username
+    const getUserName = localStorage.getItem(USERNAME_KEY)
+    greeting.innerText = "Hello " + getUserName
     greeting.classList.remove(HIDDEN_USERNAME)
 }
 
