@@ -4,7 +4,7 @@ function getClock() {
     const time = new Date()
 
     const year = time.getFullYear()
-    const month = String(time.getMonth()).padStart(2, "0")
+    const month = String(time.getMonth() + 1).padStart(2, "0")
     const date = String(time.getDate()).padStart(2, "0")
     const hour = String(time.getHours()).padStart(2, "0")
     const minute = String(time.getMinutes()).padStart(2, "0")
